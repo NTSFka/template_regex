@@ -1,5 +1,5 @@
 
-= Template Regex =
+# Template Regex
 
 > Library is experimental and shouldn't be used in production code.
 
@@ -21,11 +21,11 @@ rules.
 
 The most of code have origin in 2012 and 2013 but I haven't time to finish and release it.
 
-== Parts ==
+## Parts
 
 The whole library are split into 3 main parts.
 
-=== Template String ===
+### Template String
 
 This part handle storing string into C++ type.
 
@@ -39,7 +39,7 @@ There is a complex macro that create template string type from string literal.
 auto str = make_string("Hello World!");
 ```
 
-=== Rules ===
+### Rules
 
 Rules contains most of the library functionality. Contains multiple classes that represent
 regular expression rules for matching.
@@ -55,7 +55,7 @@ optional<Rule>          // Matches optional occurence of inner rule.
 
 Mixing those types into one type it's possible to express any matching rule.
 
-=== Template Regex ===
+### Template Regex
 
 Part only translate regular expression string (stored in template string) into rules.
 
@@ -77,7 +77,7 @@ std::string input = "abbc";
 regex_match(regex, input);
 ```
 
-== Performance ==
+## Performance
 
 Because the library generate code during compile time that allows to optimize
 source code and doesn't require runtime data to work, library overperform other
@@ -98,6 +98,4 @@ is available in 'perf' project.
 | Handwritten            |      41 ms |   9 ms |  11 ms |
 | Template Regex         |      30 ms |   9 ms |  11 ms |
 
-> Intel i7-4770S @ 3.1 GHz
-> Clang-3.6 -O3
-> Linux Mint 17.1 x64
+> Intel i7-4770S @ 3.1 GHz, Clang-3.6 -O3, Linux Mint 17.1 x64

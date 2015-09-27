@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="template_regex" Database="./tr.tags">
+  <Project Name="template_regex" Path="template_regex.project" Active="Yes"/>
+  <Project Name="perf" Path="perf/perf.project"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Project Name="template_regex" ConfigName="Debug"/>
+      <Project Name="perf" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="template_regex" ConfigName="Release"/>
+      <Project Name="perf" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

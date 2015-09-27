@@ -1,0 +1,9 @@
+
+.codelite
+
+build-debug
+build-release
+
+/template_regex.mk
+/Makefile
+/.cmake_dirty
